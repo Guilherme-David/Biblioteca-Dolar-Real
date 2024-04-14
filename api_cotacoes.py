@@ -14,7 +14,7 @@ def pegar_alta_dolar(dicionario=REQ['USDBRL']): # pega o dicionario como dolar e
 def pegar_baixa_dolar(dicionario=REQ['USDBRL']):
     for chave in dicionario:
         if chave == 'low': # se a chave for low - baixa
-             valor = dicionario[chave] # valor armazena o valor da bixa
+             valor = dicionario[chave] # valor armazena o valor da baixa
              return float(valor) # retorna como float 
 
 # faz a média da alta e da baixa, e retorna um dolar em real       
